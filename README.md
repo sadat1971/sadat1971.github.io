@@ -5,4 +5,4 @@ You can use the [editor on GitHub](https://github.com/sadat1971/sadat1971.github
 
 ## How to read a paper
 
-Please refer to the article: https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf
+Please refer to the [article](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf)
