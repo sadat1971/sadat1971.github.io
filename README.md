@@ -1,4 +1,4 @@
-# Sadat Shahriar
+# About me
 I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learning Engineer |
 ## Projects
 ### Deceptive Domain Transfer
@@ -61,9 +61,4 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
   <img src="/docs/images/emo.png" width="50%">
 </p>
 
-## Where I helped
-
-## Education
-
-## Skills
 
