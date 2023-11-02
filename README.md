@@ -9,7 +9,7 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 – Built a sophisticated domain-transfer technique, which was the first in the field, and improved performance over the self-domain training strategy by up to 18% in F1-score. Published results in three conferences: RANLP ’21, and ‘23, and SOCINFO’ 22. 
 
 <p align="center">
-  <img src="/docs/images/domtransfer.png" width="50%">
+  <img src="/docs/images/domtransfer.png" width="60%">
 </p>
 
 
@@ -21,9 +21,8 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 – Achieved a significant performance improvement of 4.54% in F1-score by using the PPT scores in phishing email detection over the SOTA approaches, with Fear being the most prominent PPT. Published result in WBC ‘22, and won the best paper award. 
 
-![PPT](/docs/images/PPT.png)
 <p align="center">
-  <img src="/docs/images/PPT.png" width="50%">
+  <img src="/docs/images/PPT.png" width="60%">
 </p>
 
 ### Collusion Scam in YouTube Comments
@@ -35,7 +34,7 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 – Built the first dataset for collusion scam, developed deep learning techniques for successful collusion scam detection, and demonstrated the efficacy of leveraging metadata like the timespan, like count, and age of the channel in the detection process. Published one conference paper in RANLP ‘23.
 
 <p align="center">
-  <img src="/docs/images/colscam.png" width="50%">
+  <img src="/docs/images/colscam.png" width="70%">
 </p>
 
 ### Disagreements in Hate Speech Annotation
@@ -47,8 +46,9 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 – Demonstrated the effectiveness of individual annotator modeling and the importance of metadata association. Achieved a top ten spot in terms of cross-entropy score, and published in SemEval ‘23 conference. 
 
 <p align="center">
-  <img src="/docs/images/hate.png" width="50%">
+  <img src="/docs/images/hate.png" width="60%">
 </p>
+
 ### Emotion Forecasting in Dyadic Conversation
 
 – Emotion forecasting is a novel task, aiming to predict a speaker's future emotional state based on their past and current audiovisual cues. Unlike traditional emotion recognition, it involves predicting emotions in advance and demands innovative problem formulations and modeling techniques.
@@ -58,7 +58,7 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 – Demonstrated the superiority of dynamic models in the forecasting process by an improvement of 3% on average. Published the work in the prestigious FG ‘19 conference. 
 
 <p align="center">
-  <img src="/docs/images/emo.png" width="50%">
+  <img src="/docs/images/emo.png" width="60%">
 </p>
 
 
