@@ -24,7 +24,7 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 – Built the first dataset for collusion scam, developed deep learning techniques for successful collusion scam detection, and demonstrated the efficacy of leveraging metadata like the timespan, like count, and age of the channel in the detection process. Published one conference paper in RANLP ‘23.
 
-/docs/images/colscam.png
+![colscam](/docs/images/colscam.png)
 
 ### Disagreements in Hate Speech Annotation
 
