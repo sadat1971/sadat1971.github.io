@@ -8,6 +8,8 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 – Built a sophisticated domain-transfer technique, which was the first in the field, and improved performance over the self-domain training strategy by up to 18% in F1-score. Published results in three conferences: RANLP ’21, and ‘23, and SOCINFO’ 22. 
 
+![domain transfer](/docs/images/domtransfer.png)
+
 ### Phishing Emails and Psychological Traits
 
 – Despite numerous attempts of phishing email detection, attackers are ever-evolving, often outsmarting the efforts. The project aimed to improve phishing email detection by detecting and utilizing unique psychological traits present in phishing emails.
