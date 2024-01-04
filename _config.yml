@@ -2,3 +2,12 @@ title: Sadat Shahriar
 logo: /docs/images/piash.jpg
 show_downloads: true
 theme: jekyll-theme-minimal
+
+
+nav:
+  - title: About Me
+    url: /
+  - title: Publications
+    url: /publication.html
+  - title: Resume
+    url: /resume.html
