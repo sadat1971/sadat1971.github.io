@@ -3,10 +3,24 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 [Publications](/publication.html) [Short Resume](/resume.html)
 
-<p style="color: blue;"> I am currently open to work for a summer internship position for 2024. If you are interested, please contact me at **sadat.shahriar.03@gmail.com**  </p>
+<p style="color: blue;"> I am currently open to work for a summer internship position for 2024. If you are interested, please contact me at <b>sadat.shahriar.03@gmail.com</b>  </p>
 
 
 ## Projects
+(Last Update 01-10-2024)
+
+### LLM for Mental Health Support (Ongoing)
+– While Large Language Models (LLM) are capable of being a helpful agent for human writing, they are not super helpful when it comes to providing support for endangered population, especially those who are facing distressful situation, putting them at major risk 
+for mental well-being. 
+
+– The task is to build an LLM tailored to help people with such mental health situations. The key challenge is to design a system which can automatically analyze the patient's (or the poster) personality, level of risk, and provide answers/comments accordingly
+
+– Orchastreated a step-by-step solution design. Performed intelligent prompt engineering with several SOTA LLMS (Llama2, GPT-3, Mistral-7b), supervised fine-tuning, and fine-tuning with Reinforcement Learning with Human and AI feedback. 
+
+<p align="center">
+  <img src="/docs/images/robot_support" width="60%">
+</p>
+
 ### Deceptive Domain Transfer
 – The web being a fertile ground for deceptive text in different domains like Fake News, Phishing Emails, Fake Reviews, and Rumors, the SOTA detection methods are domain-specific, and as such, detection model in one domain doesnot work for the other. However, a major discrepancy in the data distribution in these domains requires a method of deceptive knowledge transfer.
 
