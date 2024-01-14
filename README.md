@@ -10,12 +10,13 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 (Last Update 01-10-2024)
 
 ### LLM for Mental Health Support (Ongoing)
-– While Large Language Models (LLM) are capable of being a helpful agent for human writing, they are not super helpful when it comes to providing support for endangered population, especially those who are facing distressful situation, putting them at major risk 
-for mental well-being. 
+– Traditional Large Language Model (LLMs), although skilled in various tasks, do not possess the necessary specialization to offer effective mental health support. In response to the critical need for mental health support, particularly for individuals facing distressful situations and heightened risks to their well-being, and posting to various online support groups, the initiative aims to develop a specialized LLM. 
 
-– The task is to build an LLM tailored to help people with such mental health situations. The key challenge is to design a system which can automatically analyze the patient's (or the poster) personality, level of risk, and provide answers/comments accordingly
+–The objective is to develop an LLM program specifically designed to assist individuals facing mental health challenges. Designing a system that can analyze the patient's personality, the level of risk, and provide appropriate answers/comments is a significant challenge.
 
-– Orchastreated a step-by-step solution design. Performed intelligent prompt engineering with several SOTA LLMS (Llama2, GPT-3, Mistral-7b), supervised fine-tuning, and fine-tuning with Reinforcement Learning with Human and AI feedback. 
+– Orchastreated a comprehensive step-by-step solution design. Performed intelligent prompt engineering with several SOTA LLMs (Llama2, GPT-3, Mistral-7b), supervised fine-tuning, and fine-tuning with Reinforcement Learning with Human and AI feedback. 
+
+– While the initiative is still in progress, early results show positive progress toward the creation of an LLM specifically designed for mental health support. The coordinated use of prompt engineering and fine-tuning approaches is resulting in a more complex understanding of users' mental states, allowing the model to provide intelligent and empathic replies.
 
 <p align="center">
   <img src="/docs/images/robot_support.png" width="30%">
