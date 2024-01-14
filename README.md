@@ -18,7 +18,7 @@ for mental well-being.
 – Orchastreated a step-by-step solution design. Performed intelligent prompt engineering with several SOTA LLMS (Llama2, GPT-3, Mistral-7b), supervised fine-tuning, and fine-tuning with Reinforcement Learning with Human and AI feedback. 
 
 <p align="center">
-  <img src="/docs/images/robot_support" width="60%">
+  <img src="/docs/images/robot_support.png" width="30%">
 </p>
 
 ### Deceptive Domain Transfer
