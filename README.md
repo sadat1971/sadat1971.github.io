@@ -3,6 +3,11 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 [Publications](/publication.html) [Short Resume](/resume.html)
 
+<p align="center">
+  <img src="/docs/images/piash.jpg" width="30%">
+</p>
+
+
 <p style="color: blue;"> I am currently open to work for a summer internship position for 2024. If you are interested, please contact me at <b>sadat.shahriar.03@gmail.com</b>  </p>
 
 
