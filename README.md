@@ -2,6 +2,10 @@
 I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learning Engineer |
 
 [Publications](/publication.html) [Short Resume](/resume.html)
+
+<p style="color: blue;"> I am currently open to work for a summer internship position for 2024. If you are interested, please  </p>
+
+
 ## Projects
 ### Deceptive Domain Transfer
 – The web being a fertile ground for deceptive text in different domains like Fake News, Phishing Emails, Fake Reviews, and Rumors, the SOTA detection methods are domain-specific, and as such, detection model in one domain doesnot work for the other. However, a major discrepancy in the data distribution in these domains requires a method of deceptive knowledge transfer.
