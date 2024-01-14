@@ -3,8 +3,8 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 [Publications](/publication.html) [Short Resume](/resume.html)
 
-<p align="center">
-  <img src="/docs/images/piash.jpg" width="30%">
+<p align="left">
+  <img src="/docs/images/piash.jpg" width="20%">
 </p>
 
 
