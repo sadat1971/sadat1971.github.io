@@ -1,7 +1,7 @@
 # About me
 I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learning Engineer |
 
-[<u>Publications</u>](/publication.html)     [Short Resume](/resume.html)     [Projects](/projects.html)     [Pro](https://github.com/sadat1971/sadat1971.github.io/blob/main/README.md#projects)
+[<u>Publications</u>](/publication.html)     [Short Resume](/resume.html)     [Projects](/projects.html)   
 
 <p align="left">
   <img src="/docs/images/piash.jpg" width="20%">
