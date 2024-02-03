@@ -1,7 +1,7 @@
 # About me
 I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learning Engineer |
 
-[Publications](/publication.html) | [Short Resume](/resume.html) | [Projects](/projects.html) | [Contact](/contact.html) 
+[Publications](/publication.html) | [Short Resume](/resume.html) | [Projects](/projects.html) | [Contact](/contact.html) | [Blogs and Tutorials](/blogs_and_tutorials.html)
 
 <p align="left">
   <img src="/docs/images/piash.jpg" width="20%">
