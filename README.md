@@ -10,6 +10,9 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 <p style="color: blue;"> I am currently open to work for a summer internship position for 2024. If you are interested, please contact me at <b>sadat.shahriar.03@gmail.com</b>  </p>
 
+## Updates
+
+02-16-2024: I am invited for a talk 
 
 ## Projects
 (Last Update 01-10-2024)
