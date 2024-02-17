@@ -12,9 +12,9 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 ## Updates
 
-02-16-2024: I am invited for a talk 
+<span style="color: green;">02-16-2024:</span> I am invited for a talk organized by [Cougar AI](https://www.cougarai.org/). Click [here] (https://www.linkedin.com/posts/activity-7164369186528460800-r1Mi?utm_source=share&utm_medium=member_desktop) to see the details.
 
-<span style="color: green;">This text is in green</span>
+<span style="color: green;">01-16-2024:</span> I will be teaching (as instructional assistant of Dr. Mukherjee) a graduate [Machine Learning](https://www2.cs.uh.edu/~arjun/courses/ml/) course in Spring'24
 
 ## Projects
 (Last Update 01-10-2024)
