@@ -14,6 +14,8 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 02-16-2024: I am invited for a talk 
 
+<span style="color: green;">This text is in green</span>
+
 ## Projects
 (Last Update 01-10-2024)
 
