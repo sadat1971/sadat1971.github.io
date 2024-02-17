@@ -18,6 +18,9 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 **<span style="color: green;">01-16-2024:</span>** I will be teaching (as instructional assistant of Dr. Mukherjee) a graduate [Machine Learning](https://www2.cs.uh.edu/~arjun/courses/ml/) course in Spring'24
 
+**<span style="color: green;">12-11-2023:</span>** I received the *Outstanding Reviewer Award* from [BLP '23](https://blp-workshop.github.io/awards), co-located with EMNLP '23
+
+**<span style="color: green;">06-30-2023:</span>** Two of my papers got accepted in RANLP '23 !  The paper on [Domain Transfer](https://aclanthology.org/2023.ranlp-1.115.pdf) and the Cryptocurrency-based [Collusion Scam](https://aclanthology.org/2023.ranlp-1.114.pdf) paper
 
 
 ## Projects
