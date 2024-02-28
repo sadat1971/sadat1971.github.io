@@ -12,7 +12,7 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 ## Updates
 
-**<span style="color: green;">02-16-2024:</span>** I gave a talk to the research-info session organized by [Cougar AI](https://www.cougarai.org/). Click [here](https://www.linkedin.com/posts/activity-7164369186528460800-r1Mi?utm_source=share&utm_medium=member_desktop) to see the details.
+**<span style="color: green;">02-16-2024:</span>** I gave a talk to the research-info session organized by [Cougar AI](https://www.cougarai.org/). Click [here](/LLM with NLP_ The science behind the hype.html) to see the details.
 
 
 **<span style="color: green;">02-16-2024:</span>** I am invited to a talk organized by [Cougar AI](https://www.cougarai.org/). Click [here](https://www.linkedin.com/posts/activity-7164369186528460800-r1Mi?utm_source=share&utm_medium=member_desktop) to see the details.
