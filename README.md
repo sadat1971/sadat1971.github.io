@@ -12,7 +12,7 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 ## Updates
 
-**<span style="color: red;">05-13-2024:</span>** Great News!! I joined Amazon (AWS) as an applied scientist intern !!
+**<span style="color: green;">05-13-2024:</span>** Great News!! I joined Amazon (AWS) as an applied scientist intern !!
 
 
 **<span style="color: green;">02-16-2024:</span>** I gave a talk to the research-info session organized by [Cougar AI](https://www.cougarai.org/). Click [here](/talk_02_22_24.html) to see the details.
