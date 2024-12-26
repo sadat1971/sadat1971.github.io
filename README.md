@@ -12,10 +12,10 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 ## Updates
 
+**<span style="color: green;">02-09-2024:</span>** Part of my internship work with Amazon Web Services (AWS) is available here: [Inference Time LLM Alignment for Single and Multi Domain Preference Spectrum](https://arxiv.org/pdf/2410.19206)
+
+
 <p><strong><span style="color: green;">05-13-2024:</span></strong> <span style="font-family:Comic Sans MS, cursive; font-weight: bold;"><span style="color: red;">🎉 Great News!!</span></span> I joined Amazon (AWS) as an applied scientist intern !!</p>
-
-
-
 
 **<span style="color: green;">02-16-2024:</span>** I gave a talk to the research-info session organized by [Cougar AI](https://www.cougarai.org/). Click [here](/talk_02_22_24.html) to see the details.
 
