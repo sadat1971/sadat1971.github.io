@@ -12,11 +12,13 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 ## Updates
 
-<p><strong><span style="color: green;">11-18-2024:</span></strong> <span style="font-family:Comic Sans MS, cursive; font-weight: bold;"><span style="color: red;">🎉 🎉 🎉 Amazing News!!</span></span> I accepted a full-time offer to join Aamazon (AWS) from next summer as an Applied Scientist (L5)!!</p>
+<p><strong><span style="color: green;">11-18-2024:</span></strong> <span style="font-family:Comic Sans MS, cursive; font-weight: bold;"><span style="color: purple;">🎉 🎉 🎉 Amazing News!!</span></span> I accepted a full-time offer to join Aamazon (AWS) from next summer as an Applied Scientist (L5)!!</p>
 
 **<span style="color: green;">11-03-2024:</span>** Officially a PhD candidate ! Passed my PhD proposal defense. Thanks to my supervisor Dr. Arjun Mukherjee and the amazing committee :) 
 
 **<span style="color: green;">10-24-2024:</span>** Part of my internship work with Amazon Web Services (AWS) is available here: [Inference Time LLM Alignment for Single and Multi Domain Preference Spectrum](https://arxiv.org/pdf/2410.19206)
+
+**<span style="color: green;">02-16-2024:</span>** I wrote a detailed blog about my experience at AWS [here](https://medium.com/@shahriarsadat71_26111/internship-at-aws-as-an-applied-scientist-1105204726a2).
 
 
 <p><strong><span style="color: green;">05-13-2024:</span></strong> <span style="font-family:Comic Sans MS, cursive; font-weight: bold;"><span style="color: red;">🎉 Great News!!</span></span> I joined Amazon (AWS) as an applied scientist intern !!</p>
@@ -36,6 +38,9 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 
 ## Projects
+
+**<span style="color: purple;">This is not an updated list of projects. Please find my project details as recent publications in my [google scholar](https://scholar.google.com/citations?user=8whkcEsAAAAJ&hl=en)</span>**
+
 (Last Update 01-10-2024)
 
 ### LLM for Mental Health Support (Ongoing)
