@@ -8,7 +8,7 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 </p>
 
 
-<p style="color: blue;"> I am open to work full time from May 2025. If you are interested, please contact me at <b>sadat.shahriar.03@gmail.com</b>  </p>
+<p style="color: blue;"> Wanna talk idea, tech, ML, NLP or just a coffee ? Feel free to shoot me an email! <b>sadat.shahriar.03@gmail.com</b>  </p>
 
 ## Updates
 
