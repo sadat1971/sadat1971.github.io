@@ -12,6 +12,10 @@ I build cutting-edge ML solution | NLP with LLM | Data Scientist | Machine Learn
 
 ## Updates
 
+**<span style="color: green;">06-16-2025:</span>** Joined Amazon (AWS agents) as a full-time applied scientist. Also, moved to Seattle with my wife and my cat ! 
+
+<p><strong><span style="color: green;">04-16-2025:</span></strong> <span style="font-family:Comic Sans MS, cursive; font-weight: bold;"><span style="color: purple;">🎉 🎉 🎉 Humble Brag: Defended PhD thesis :) </p>
+
 <p><strong><span style="color: green;">11-18-2024:</span></strong> <span style="font-family:Comic Sans MS, cursive; font-weight: bold;"><span style="color: purple;">🎉 🎉 🎉 Amazing News!!</span></span> I accepted a full-time offer to join Aamazon (AWS) from next summer as an Applied Scientist (L5)!!</p>
 
 **<span style="color: green;">11-03-2024:</span>** Officially a PhD candidate ! Passed my PhD proposal defense. Thanks to my supervisor Dr. Arjun Mukherjee and the amazing committee :) 
