@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #2c3e50;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #34495e;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .link-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-card a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 400;
+            display: block;
+            line-height: 1.6;
+        }
+
+        .link-card:nth-child(2) {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .link-description {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .home-link {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: transparent;
+            border: 2px solid #34495e;
+            border-radius: 25px;
+            color: #34495e;
+            text-decoration: none;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .home-link:hover {
+            background: #34495e;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .link-card a {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Important Links</h1>
+        
+        <div class="links-container">
+            <div class="link-card">
+                <a href="https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/" target="_blank">
+                    Defeating Nondeterminism in LLM Inference
+                    <div class="link-description">
+                        Exploring techniques to make LLM outputs more predictable and consistent
+                    </div>
+                </a>
+            </div>
+            
+            <div class="link-card">
+                <a href="https://github.com/dair-ai/ML-Papers-of-the-Week" target="_blank">
+                    Weekly Interesting ML Papers
+                    <div class="link-description">
+                        Curated collection of the most interesting machine learning papers each week
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <a href="index.html" class="home-link">← Back to Home</a>
+    </div>
+</body>
+</html>
