@@ -123,13 +123,13 @@ img {
 
 .profile-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.8em;
   margin-bottom: 2em;
 }
 
 .profile-row .profile-photo {
-  width: 320px;
+  width: 280px;
   height: auto;
   border-radius: 4px;
   object-fit: cover;
