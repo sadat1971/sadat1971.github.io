@@ -1,21 +1,21 @@
 title: Sadat Shahriar
-logo: /docs/images/piash.jpg
 
+markdown: kramdown
 
 nav:
-  - title: About Me
+  - title: About
     url: /
   - title: Publications
-    url: /publication.html
+    url: /publications
   - title: Resume
-    url: /resume.html
-  - title: Projects
-    url: /projects.html
-  - title: Contact
-    url: /contact.html
-  - title: Blogs and Tutorials
-    url: /blogs_and_tutorials.html
-  - title: Important Links I found
-    url: /Important_links.html
-  - title: Paper Explainer
-    url: /paper_explainer.html
+    url: /resume
+  - title: Blogs & Tutorials
+    url: /blogs
+  - title: Tech Links
+    url: /tech-links
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

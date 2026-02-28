@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <a href="/" class="site-title">{{ site.title }}</a>
+      <nav>
+        {% for item in site.nav %}
+          {% assign nav_url = item.url | append: "" %}
+          {% assign current_url = page.url | append: "" %}
+          {% if nav_url == "/" %}
+            {% if current_url == "/" or current_url == "/index.html" %}
+              <a href="{{ item.url }}" class="active">{{ item.title }}</a>
+            {% else %}
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            {% endif %}
+          {% else %}
+            {% assign nav_url_slash = nav_url | append: "/" %}
+            {% assign nav_url_html = nav_url | append: ".html" %}
+            {% if current_url == nav_url or current_url == nav_url_slash or current_url == nav_url_html %}
+              <a href="{{ item.url }}" class="active">{{ item.title }}</a>
+            {% else %}
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </header>
+    <main class="site-content">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+    </footer>
+  </div>
+</body>
+</html>
