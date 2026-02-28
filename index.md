@@ -4,7 +4,6 @@ title: About
 ---
 
 <div class="profile-row">
-<<<<<<< HEAD
   <img src="/docs/images/piash.jpg" alt="Sadat Shahriar" class="profile-photo">
   <div class="profile-bio">
     <p>Sadat is an Applied Scientist at Amazon Bedrock's AgentCore, building safety modules for LLM agents. He earned his PhD from the University of Houston in May 2025, where his research focused on deception detection and NLP. His work spans domain transfer for deceptive text, phishing detection, and large language model alignment.</p>
@@ -14,16 +13,6 @@ title: About
       <a href="https://scholar.google.com/citations?user=8whkcEsAAAAJ&hl=en" target="_blank">Google Scholar</a>
     </div>
   </div>
-=======
-<img src="/docs/images/piash.jpg" alt="Sadat Shahriar" class="profile-photo">
-<div class="profile-bio">
-<h1>Sadat Shahriar</h1>
-<p>Applied Scientist at Amazon Bedrock's AgentCore, building safety modules for LLM agents. He earned his PhD from the University of Houston in May 2025, where his research focused on deception detection and NLP. His work spans domain transfer for deceptive text, phishing detection, and large language model alignment.</p>
-<div class="profile-links">
-<a href="mailto:sadat.shahriar.03@gmail.com">Email</a>
-<a href="https://www.linkedin.com/in/sadat-shahriar/" target="_blank">LinkedIn</a>
-<a href="https://scholar.google.com/citations?user=8whkcEsAAAAJ&hl=en" target="_blank">Google Scholar</a>
->>>>>>> e0e0101 (adding a page)
 </div>
 </div>
 </div>
