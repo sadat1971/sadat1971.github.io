@@ -129,15 +129,15 @@ img {
 }
 
 .profile-row .profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 10%;
+  width: 220px;
+  height: auto;
+  border-radius: 4px;
   object-fit: cover;
   flex-shrink: 0;
 }
 
 .profile-bio h1 {
-  font-size: 1.5em;
+  font-size: 3em;
   margin: 0 0 0.4em;
 }
 
@@ -277,8 +277,8 @@ ol.publication-list {
   }
 
   .profile-row .profile-photo {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: auto;
   }
 
   h1 { font-size: 1.5em; }
