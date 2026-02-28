@@ -78,7 +78,7 @@ Transform the existing HTML-based academic site into a Markdown-driven Jekyll si
     - Remove `index.html`, `publication.html`, `resume.html`, `projects.html`, `contact.html`, `blogs_and_tutorials.html`, `Important_links.html`
     - Keep `Blogs_and_Tutorials/` directory (contains tutorial HTML pages still linked from blogs.md)
     - Keep `docs/` directory (contains images and PDFs still in use)
-    - _Requirements: 8.3_1`
+    - _Requirements: 8.3_1`1
 
 - [x] 8. Final checkpoint - Verify complete site
   - Ensure the full site builds and all pages are accessible via navigation. Ensure no broken links to removed files. Ask the user if questions arise.

@@ -5,26 +5,24 @@ title: Publications
 
 # Publications
 
-<ol class="publication-list" markdown="1">
-<li>**Sadat Shahriar** and Arjun Mukherjee. (2023). Tackling the Myriads of Collusion Scams on YouTube Comments of Cryptocurrency Videos. In Proceedings of the 14th International Conference on Recent Advances in Natural Language Processing, Varna, Bulgaria.</li>
+1. S Shahriar, N Ayoobi, A Mukherjee, M Musharrat, SVV Senagasetty. "Exposing Pink Slime Journalism: Linguistic Signatures and Robust Detection Against LLM-Generated Threats." Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing (RANLP), 2025.
 
-<li>**Sadat Shahriar**, Arjun Mukherjee, and Omprakash Gnawali. (2023). Exploring Deceptive Domain Transfer Strategies: Mitigating the Differences among Deceptive Domains. In Proceedings of the 14th International Conference on Recent Advances in Natural Language Processing, Varna, Bulgaria.</li>
+2. S Shahriar, N Ayoobi, A Mukherjee. "The Erosion of LLM Signatures: Can We Still Distinguish Human and LLM-Generated Scientific Ideas After Iterative Paraphrasing?" Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing (RANLP), 2025.
 
-<li>Navid Ayoobi, **Sadat Shahriar**, and Arjun Mukherjee. (2023, September). The looming threat of fake and LLM-generated LinkedIn profiles: Challenges and opportunities for detection and prevention. In Proceedings of the 34th ACM Conference on Hypertext and Social Media.</li>
+3. N Ayoobi, S Shahriar, A Mukherjee. "Beyond Easy Wins: A Text Hardness-Aware Benchmark for LLM-Generated Text Detection." arXiv preprint arXiv:2507.15286, 2025.
 
-<li>**Sadat Shahriar** and Thamar Solorio. (2023). SafeWebUH at SemEval-2023 Task 11: Learning Annotator Disagreement in Derogatory Text: Comparison of Direct Training vs Aggregation. In Proceedings of the 17th International Workshop on Semantic Evaluation (SemEval-2023), pages 94–100, Toronto, Canada. Association for Computational Linguistics.</li>
+4. S Shahriar. "Linguistic Deception Detection — Models, Domains, Behaviors, Stylistic Patterns to Large Language Models (LLMs)." PhD Dissertation, University of Houston, 2025.
 
-<li>Md Hafizur Rahman, **Sadat Shahriar**, and Pradeep L. Menezes. 2023. "Recent Progress of Machine Learning Algorithms for the Oil and Lubricant Industry" Lubricants 11, no. 7: 289. <a href="https://doi.org/10.3390/lubricants11070289">https://doi.org/10.3390/lubricants11070289</a></li>
+5. S Shahriar, Z Qi, N Pappas, S Doss, M Sunkara, K Halder, M Mager, et al. "Inference Time LLM Alignment in Single and Multidomain Preference Spectrum." [arXiv:2410.19206](https://arxiv.org/abs/2410.19206), 2024.
 
-<li>**Sadat Shahriar**, Arjun Mukherjee, and Omprakash Gnawali. (2022, October). Deception Detection with Feature-Augmentation by Soft Domain Transfer. In International Conference on Social Informatics (pp. 373-380). Cham: Springer International Publishing.</li>
+6. N Ayoobi, S Shahriar, A Mukherjee. "Seeing Through AI's Lens: Enhancing Human Skepticism Towards LLM-Generated Fake News." Proceedings of the 35th ACM Conference on Hypertext and Social Media, 2024.
 
-<li>**Sadat Shahriar**, Arjun Mukherjee, and Omprakash Gnawali. (2022). Improving Phishing Detection Via Psychological Trait Scoring. In Proceedings of the IADIS International Conference Web Based Communities 2022 (part of MCCSIS 2022) (pp. 131-139).</li>
+7. SR Dipta, S Shahriar. "HU at SemEval-2024 Task 8A: Can Contrastive Learning Learn Embeddings to Detect Machine-Generated Text?" Proceedings of the 18th International Workshop on Semantic Evaluation (SemEval), 2024.
 
-<li>**Sadat Shahriar**, Arjun Mukherjee, and Omprakash Gnawali. (2021, September). A Domain-Independent Holistic Approach to Deception Detection. In Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2021) (pp. 1308-1317).</li>
+8. N Ayoobi, S Shahriar, A Mukherjee. "The Looming Threat of Fake and LLM-Generated LinkedIn Profiles: Challenges and Opportunities for Detection and Prevention." Proceedings of the 34th ACM Conference on Hypertext and Social Media, 2023.
 
-<li>Md Nazmul Hoq, Nadira Anjum Nipa, Mohammad Mohaiminul Islam, and **Sadat Shahriar**. (2019, May). Bangla handwritten character recognition: An overview of the state of the art classification algorithm with new dataset. In 2019 1st International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT) (pp. 1-6). IEEE.</li>
+9. S Shahriar, A Mukherjee, O Gnawali. "Exploring Deceptive Domain Transfer Strategies: Mitigating the Differences Among Deceptive Domains." Proceedings of the 14th International Conference on Recent Advances in Natural Language Processing (RANLP), 2023.
 
-<li>**Sadat Shahriar**, &amp; Yelin Kim. (2019, May). Audio-visual emotion forecasting: Characterizing and predicting future emotion using deep learning. In 2019 14th IEEE International Conference on Automatic Face &amp; Gesture Recognition (FG 2019) (pp. 1-7). IEEE.</li>
+10. S Shahriar, A Mukherjee. "Tackling the Myriads of Collusion Scams on YouTube Comments of Cryptocurrency Videos." Proceedings of the 14th International Conference on Recent Advances in Natural Language Processing (RANLP), 2023.
 
-<li>**Sadat Shahriar**, &amp; Md Nazmul Hoq. (2016, December). Evaluation of LPC trajectory for Vowel-Consonant-Vowel sequence. In 2016 19th International Conference on Computer and Information Technology (ICCIT) (pp. 235-239). IEEE.</li>
-</ol>
+For a complete list of publications, visit my [Google Scholar profile](https://scholar.google.com/citations?user=8whkcEsAAAAJ&hl=en).
