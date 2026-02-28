@@ -6,7 +6,8 @@ title: About
 <div class="profile-row">
   <img src="/docs/images/piash2.jpeg" alt="Sadat Shahriar" class="profile-photo">
   <div class="profile-bio">
-    <p>Sadat is an Applied Scientist at Amazon Bedrock's AgentCore, building safety modules for LLM agents. He earned his PhD from the University of Houston in May 2025, where his research focused on web-based deception detection.</p>
+    <p>Sadat is an Applied Scientist at Amazon Bedrock's AgentCore, where he designs and builds safety and authorization systems for LLM agents. He built the customer side natural language to Cedar policy autoformalization system powering Policy in Amazon Bedrock AgentCore, and has filed a patent on policy routing and ML-validated enforcement architecture. His work focuses on making AI agents safe, controllable, and deployable at scale.</p>
+    <p>Sadat earned his PhD in Computer Science from the University of Houston in May 2025, where he led research on web-based deception detection across domains including fake news, phishing emails, fake reviews, and YouTube scams. His work leveraged persuasion psychology and intelligent knowledge transfer using deep learning and LLM-based deception detection .</p>
     <div class="profile-links">
       <a href="mailto:sadat.shahriar.03@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/sadat-shahriar/" target="_blank">LinkedIn</a>
