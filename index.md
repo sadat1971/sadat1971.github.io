@@ -4,7 +4,7 @@ title: About
 ---
 
 <div class="profile-row">
-  <img src="/docs/images/piash.jpg" alt="Sadat Shahriar" class="profile-photo">
+  <img src="/docs/images/piash2.jpeg" alt="Sadat Shahriar" class="profile-photo">
   <div class="profile-bio">
     <p>Sadat is an Applied Scientist at Amazon Bedrock's AgentCore, building safety modules for LLM agents. He earned his PhD from the University of Houston in May 2025, where his research focused on deception detection and NLP. His work spans domain transfer for deceptive text, phishing detection, and large language model alignment.</p>
     <div class="profile-links">
@@ -17,6 +17,7 @@ title: About
 
 
 ## Recent Updates
+
 - **12-02-2025:** Launched [AgentCore Policy](https://aws.amazon.com/about-aws/whats-new/2025/12/amazon-bedrock-agentcore-policy-evaluations-preview/), to keep agents safe, and stay within defined boundary. Check details [here](https://aws.amazon.com/blogs/aws/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents/)
 
 - **06-16-2025:** Joined Amazon (AWS agents) as a full-time applied scientist. Also, moved to Seattle with my wife and my cat!

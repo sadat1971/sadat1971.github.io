@@ -131,7 +131,7 @@ img {
 .profile-row .profile-photo {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 10%;
   object-fit: cover;
   flex-shrink: 0;
 }
