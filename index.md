@@ -14,14 +14,21 @@ title: About
     </div>
   </div>
 </div>
-</div>
-</div>
-`
+
+
 ## Recent Updates
+- **12-02-2025:** Launched [AgentCore Policy](https://aws.amazon.com/about-aws/whats-new/2025/12/amazon-bedrock-agentcore-policy-evaluations-preview/), to keep agents safe, and stay within defined boundary. Check details [here](https://aws.amazon.com/blogs/aws/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents/)
 
 - **06-16-2025:** Joined Amazon (AWS agents) as a full-time applied scientist. Also, moved to Seattle with my wife and my cat!
+
+- **06-16-2025:** Joined Amazon (AWS agents) as a full-time applied scientist. Also, moved to Seattle with my wife and my cat!
+
 - **04-16-2025:** 🎉 Defended PhD thesis!
+
 - **11-18-2024:** 🎉 Accepted a full-time offer to join Amazon (AWS) as an Applied Scientist (L5)!
+
 - **11-03-2024:** Officially a PhD candidate! Passed my PhD proposal defense.
+
 - **10-24-2024:** Part of my internship work with AWS is available here: [Inference Time LLM Alignment for Single and Multi Domain Preference Spectrum](https://arxiv.org/pdf/2410.19206)
+
 - **05-13-2024:** 🎉 Joined Amazon (AWS) as an applied scientist intern!
