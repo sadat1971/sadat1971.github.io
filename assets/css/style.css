@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Georgia', 'Times New Roman', serif;
-  background-color: #f5f0eb;
+  background-color: #eef3f8;
   color: #333;
   line-height: 1.7;
   margin: 0;
@@ -50,7 +50,7 @@ img {
    ========================================================================== */
 
 .site-container {
-  max-width: 750px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2em 1.5em;
 }
