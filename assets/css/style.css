@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Georgia', 'Times New Roman', serif;
-  background-color: #fafafa;
+  background-color: #f5f0eb;
   color: #333;
   line-height: 1.7;
   margin: 0;
@@ -121,39 +121,39 @@ img {
    Profile Section
    ========================================================================== */
 
-.profile-section {
-  text-align: center;
+.profile-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.8em;
   margin-bottom: 2em;
 }
 
-.profile-section img,
-.profile-photo {
+.profile-row .profile-photo {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0.8em;
+  flex-shrink: 0;
 }
 
-.profile-section h1,
-.profile-name {
-  font-size: 1.6em;
-  margin: 0.3em 0 0.1em;
+.profile-bio h1 {
+  font-size: 1.5em;
+  margin: 0 0 0.4em;
 }
 
-.profile-section p,
-.profile-tagline {
-  color: #666;
-  font-style: italic;
+.profile-bio p {
   margin: 0 0 0.6em;
+  font-size: 0.95em;
+  line-height: 1.6;
 }
 
 .profile-links {
-  margin-top: 0.5em;
+  margin-top: 0.4em;
 }
 
 .profile-links a {
-  margin: 0 0.5em;
+  margin-right: 1em;
+  font-size: 0.9em;
 }
 
 /* ==========================================================================
@@ -271,8 +271,13 @@ ol.publication-list {
     color: #2c5f8a;
   }
 
-  .profile-section img,
-  .profile-photo {
+  .profile-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-row .profile-photo {
     width: 120px;
     height: 120px;
   }
