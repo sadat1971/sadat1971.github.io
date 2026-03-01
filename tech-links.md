@@ -12,3 +12,6 @@ A curated collection of technical resources and articles worth reading.
 
 - [Weekly Interesting ML Papers](https://github.com/dair-ai/ML-Papers-of-the-Week)
   A community-curated GitHub repository that highlights the most interesting and impactful machine learning papers each week. A great way to stay current with the latest research trends in AI and ML.
+
+- [A super comprehensive survey on Agentic Reinforcement Learning](https://arxiv.org/pdf/2509.02547)
+  This 95 page survey goes deep from elaborating basics of RL to comparing different RL algos like PPO, DPO, GRPO, to many different avenues and agentic environments. Good read for intro to Agentic RL.   
