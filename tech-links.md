@@ -15,3 +15,6 @@ A curated collection of technical resources and articles worth reading.
 
 - [A super comprehensive survey on Agentic Reinforcement Learning](https://arxiv.org/pdf/2509.02547)
   This 95 page survey goes deep from elaborating basics of RL to comparing different RL algos like PPO, DPO, GRPO, to many different avenues and agentic environments. Good read for intro to Agentic RL.   
+
+- [What I Learned from My Industry Job Search as a CS PhD](https://dyahadila.github.io/blog/2026/industry-job-search-cs-phd/)
+This blog post goes over topics such as job preparation, the application process, interview strategies, and general advice for PhD students aiming for roles in artificial intelligence and related fields.
