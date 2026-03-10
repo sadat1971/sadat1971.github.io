@@ -17,6 +17,8 @@ nav:
     url: /tech-links
   - title: Misc
     url: /misc
+  - title: Temp
+    url: /codex_demo_website/temp.html
 
 defaults:
   - scope:

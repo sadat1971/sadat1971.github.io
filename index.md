@@ -12,6 +12,8 @@ title: About
       <a href="mailto:sadat.shahriar.03@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/sadat-shahriar/" target="_blank">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=8whkcEsAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      <a href="/misc">Misc</a>
+      <a href="/codex_demo_website/temp.html">Temp</a>
     </div>
   </div>
 </div>

@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareBridge Demo</title>
+  <style>
+    :root {
+      --bg: #f3f7f7;
+      --surface: #ffffff;
+      --text: #122028;
+      --muted: #4f6772;
+      --line: #d7e3e5;
+      --primary: #0f7480;
+      --secondary: #2e9c95;
+      --accent: #e9f8f3;
+      --shadow: 0 18px 36px rgba(18, 32, 40, 0.08);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 0%, #d8f0ed, transparent 45%),
+        radial-gradient(circle at 90% 10%, #e9f7ff, transparent 38%),
+        var(--bg);
+      line-height: 1.55;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max), 92vw);
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(7px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 12px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: linear-gradient(145deg, var(--primary), #11a9b3);
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.45);
+    }
+
+    .top-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .top-links a:hover {
+      color: var(--primary);
+    }
+
+    .btn {
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 11px 18px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(15, 116, 128, 0.28);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      border-color: #bfd6d8;
+      color: var(--primary);
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .hero {
+      padding-top: 88px;
+    }
+
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      margin-bottom: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 14px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: clamp(32px, 4vw, 52px);
+    }
+
+    h2 {
+      font-size: clamp(25px, 2.8vw, 36px);
+    }
+
+    p.lead {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 56ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+      margin-bottom: 18px;
+    }
+
+    .trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      border: 1px solid #cce2df;
+      background: #f6fcfb;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+      color: #1c5f61;
+      font-weight: 700;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid #dbe8ea;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f8fbfc;
+      border-bottom: 1px solid #e2ecef;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #41545d;
+    }
+
+    .hero-card-body {
+      padding: 16px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .pill {
+      background: #eef7f8;
+      border-radius: 12px;
+      padding: 10px;
+      border: 1px solid #d5e8eb;
+      font-size: 13px;
+    }
+
+    .timeline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 12px;
+      color: #2d5058;
+    }
+
+    .timeline-step {
+      flex: 1;
+      text-align: center;
+      padding: 8px 6px;
+      border: 1px solid #c9dee2;
+      border-radius: 10px;
+      background: #f4fbfb;
+    }
+
+    .section-head {
+      margin-bottom: 26px;
+      max-width: 70ch;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .grid-4, .grid-3, .grid-2, .grid-6 {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid-6 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid #dce8ea;
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 8px 18px rgba(18, 32, 40, 0.05);
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      background: var(--accent);
+      border: 1px solid #c8e8de;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: #145f57;
+      font-weight: 700;
+    }
+
+    .solution-wrap {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .ecosystem-center {
+      min-height: 260px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at center, #eaf7f6, #f9fcfc 65%),
+        #fff;
+    }
+
+    .hub {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      border-radius: 16px;
+      padding: 16px 18px;
+      font-weight: 700;
+      text-align: center;
+      min-width: 160px;
+      z-index: 2;
+      box-shadow: 0 8px 18px rgba(15, 116, 128, 0.26);
+    }
+
+    .node {
+      position: absolute;
+      background: #fff;
+      border: 1px solid #cfe0e3;
+      border-radius: 12px;
+      padding: 8px 10px;
+      font-size: 12px;
+      color: #2c4a52;
+      font-weight: 700;
+    }
+
+    .node.n1 { top: 18px; left: 16px; }
+    .node.n2 { top: 18px; right: 16px; }
+    .node.n3 { bottom: 18px; left: 16px; }
+    .node.n4 { bottom: 18px; right: 16px; }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .step {
+      position: relative;
+      padding: 14px 12px 14px 14px;
+      border-radius: 12px;
+      border: 1px solid #d8e6e7;
+      background: #fff;
+      min-height: 132px;
+    }
+
+    .step-num {
+      font-size: 12px;
+      color: #56767f;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .service-tag {
+      margin-top: 12px;
+      display: inline-flex;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: #eef5ff;
+      border: 1px solid #d7e5fa;
+      color: #315072;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .tab-btn {
+      border: 1px solid #cfe0e5;
+      background: #fff;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      color: #395660;
+      font-weight: 700;
+    }
+
+    .tab-btn.active {
+      background: #e9f7f8;
+      border-color: #9bc9cf;
+      color: #145d65;
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    .mock-grid {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 14px;
+    }
+
+    .side-list, .content-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .side-list li, .content-list li {
+      background: #f6fafb;
+      border: 1px solid #d8e7ea;
+      border-radius: 10px;
+      padding: 9px 10px;
+      font-size: 13px;
+      color: #36535d;
+    }
+
+    .tracker {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 12px;
+    }
+
+    .tracker-line {
+      display: grid;
+      gap: 8px;
+    }
+
+    .tracker-item {
+      background: #f5fbfb;
+      border: 1px solid #d5e7e8;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 13px;
+    }
+
+    .metrics {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .metric {
+      background: #fff;
+      border: 1px solid #d4e5e7;
+      border-radius: 12px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 2px;
+      color: #0f646d;
+    }
+
+    .journey {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .journey .card {
+      padding: 14px 10px;
+      text-align: center;
+      font-size: 13px;
+      min-height: 108px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: #fff;
+      padding: 34px 0 16px;
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 14px;
+    }
+
+    .footer-note {
+      text-align: center;
+      border-top: 1px solid #dce8ea;
+      padding-top: 12px;
+      font-size: 13px;
+      color: #4e676f;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-wrap,
+      .solution-wrap,
+      .mock-grid,
+      .tracker,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .grid-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .journey {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 700px) {
+      section {
+        padding: 56px 0;
+      }
+      .top-links {
+        display: none;
+      }
+      .grid-4, .grid-3, .grid-2, .grid-6, .metrics {
+        grid-template-columns: 1fr;
+      }
+      .steps {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding-top: 68px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark"></span>
+        <span>CareBridge Bangladesh</span>
+      </a>
+      <nav class="top-links">
+        <a href="#home">Home</a>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#how">How It Works</a>
+        <a href="#demo">Demo</a>
+        <a href="#business">Business Model</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#demo" class="btn btn-primary">See Product Flow</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-wrap">
+        <div>
+          <p class="eyebrow">Trusted care coordination</p>
+          <h1>A care platform for expatriates supporting loved ones in Bangladesh</h1>
+          <p class="lead">Book verified caregivers, coordinate hospital and diagnostic visits, and receive live updates from pickup to safe return home.</p>
+          <div class="hero-actions">
+            <a href="#solution" class="btn btn-primary">Explore Platform</a>
+            <a href="#journey" class="btn btn-secondary">See Care Journey</a>
+          </div>
+          <div class="trust-strip">
+            <span class="badge">Verified caregivers</span>
+            <span class="badge">Curated clinics</span>
+            <span class="badge">Live updates</span>
+            <span class="badge">Training-backed workforce</span>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head">
+            <span>Family Dashboard Preview</span>
+            <span>Live booking</span>
+          </div>
+          <div class="hero-card-body">
+            <div class="pill"><strong>Parent:</strong> Rahima Begum</div>
+            <div class="hero-meta">
+              <div class="pill"><strong>Service:</strong> Hospital visit assistance</div>
+              <div class="pill"><strong>Caregiver:</strong> Anika Sultana</div>
+            </div>
+            <div class="timeline">
+              <div class="timeline-step">Picked up</div>
+              <div class="timeline-step">At clinic</div>
+              <div class="timeline-step">Returning home</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="problem">
+      <div class="container">
+        <div class="section-head">
+          <h2>The problem</h2>
+          <p class="subtitle">Families abroad struggle to coordinate trusted care for parents back home.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card">
+            <div class="icon">01</div>
+            <h3>Distance creates stress</h3>
+            <p>Overseas children cannot physically manage appointments and hospital logistics.</p>
+          </article>
+          <article class="card">
+            <div class="icon">02</div>
+            <h3>Care is fragmented</h3>
+            <p>Transport, tests, prescriptions, reports, and follow-ups are manually coordinated.</p>
+          </article>
+          <article class="card">
+            <div class="icon">03</div>
+            <h3>Trust is unclear</h3>
+            <p>No curated platform exists for selecting reliable elderly support helpers.</p>
+          </article>
+          <article class="card">
+            <div class="icon">04</div>
+            <h3>Supply is unstructured</h3>
+            <p>Potential caregivers exist, but screening, training, and ratings are missing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution">
+      <div class="container solution-wrap">
+        <div class="card">
+          <h2>Our solution</h2>
+          <p>A curated platform connecting expatriate families, trained caregivers, clinics, diagnostics, and training partners.</p>
+          <p>Families book and monitor care services while verified local providers earn through structured, accountable work.</p>
+        </div>
+        <div class="panel ecosystem-center">
+          <div class="hub">CareBridge Platform</div>
+          <div class="node n1">Expat families</div>
+          <div class="node n2">Care providers</div>
+          <div class="node n3">Clinics</div>
+          <div class="node n4">Training partners</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-num">Step 1</span><h3>Family books service</h3><p>Choose parent, service, and schedule in minutes.</p></article>
+          <article class="step"><span class="step-num">Step 2</span><h3>Verified assignment</h3><p>Platform assigns a caregiver with matched skills.</p></article>
+          <article class="step"><span class="step-num">Step 3</span><h3>Parent assistance</h3><p>Caregiver picks up and supports clinic activities.</p></article>
+          <article class="step"><span class="step-num">Step 4</span><h3>Live updates</h3><p>Family receives checkpoints and summary notes.</p></article>
+          <article class="step"><span class="step-num">Step 5</span><h3>Safe closure</h3><p>Parent returns home and visit record is closed.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Services families can book</h2>
+        </div>
+        <div class="grid-6">
+          <article class="card"><div class="icon">H</div><h3>Hospital accompaniment</h3><p>Pickup, registration, consultation support, and return home.</p><span class="service-tag">Demo package</span></article>
+          <article class="card"><div class="icon">D</div><h3>Diagnostic support</h3><p>Escort for tests, imaging, and report collection.</p><span class="service-tag">Demo package</span></article>
+          <article class="card"><div class="icon">V</div><h3>Doctor visit assistance</h3><p>Appointment coordination and prescription follow-up.</p><span class="service-tag">Demo package</span></article>
+          <article class="card"><div class="icon">M</div><h3>Medicine pickup</h3><p>Purchase and deliver prescribed medicines to home.</p><span class="service-tag">Demo package</span></article>
+          <article class="card"><div class="icon">R</div><h3>Recurring elder check-ins</h3><p>Weekly or monthly support visits with updates.</p><span class="service-tag">Demo package</span></article>
+          <article class="card"><div class="icon">C</div><h3>Custom care requests</h3><p>Flexible concierge-style support for family needs.</p><span class="service-tag">Demo package</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo">
+      <div class="container">
+        <div class="section-head">
+          <h2>Product demo screens</h2>
+          <p class="subtitle">Fake UI mockups that illustrate core workflows and trust features.</p>
+        </div>
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="family">Family Dashboard</button>
+          <button class="tab-btn" data-tab="booking">Live Booking Tracker</button>
+          <button class="tab-btn" data-tab="caregiver">Caregiver Profile</button>
+          <button class="tab-btn" data-tab="clinic">Clinic Listing</button>
+          <button class="tab-btn" data-tab="training">Training Dashboard</button>
+        </div>
+
+        <div class="panel tab-panel active" id="family">
+          <div class="panel-head"><span>Family Dashboard</span><span>Browser mockup</span></div>
+          <div style="padding: 14px;" class="mock-grid">
+            <ul class="side-list">
+              <li>Overview</li><li>My Parents</li><li>Book a Service</li><li>Active Care</li><li>History</li><li>Payments</li>
+            </ul>
+            <ul class="content-list">
+              <li>Parent profile card: Rahima Begum, age 67</li>
+              <li>Upcoming booking: Cardiology checkup, Tuesday 10:00 AM</li>
+              <li>Active service timeline with checkpoints</li>
+              <li>Recent update panel with reports and receipt uploads</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel tab-panel" id="booking">
+          <div class="panel-head"><span>Booking Flow</span><span>5-step process</span></div>
+          <div style="padding: 14px;">
+            <div class="timeline">
+              <div class="timeline-step">1 Parent</div><div class="timeline-step">2 Service</div><div class="timeline-step">3 Schedule</div><div class="timeline-step">4 Caregiver</div><div class="timeline-step">5 Confirm</div>
+            </div>
+            <ul class="content-list" style="margin-top: 12px;">
+              <li>Select parent</li><li>Choose service type</li><li>Pick date and time</li><li>Select verified caregiver</li><li>Confirm and pay</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel tab-panel" id="caregiver">
+          <div class="panel-head"><span>Caregiver Profile</span><span>Trust-first profile</span></div>
+          <div style="padding: 14px;" class="grid-2">
+            <ul class="content-list">
+              <li>Name and photo: Anika Sultana</li>
+              <li>Rating: 4.8 out of 5</li>
+              <li>Completed visits: 214</li>
+              <li>Certifications: Elder care, mobility support</li>
+            </ul>
+            <ul class="content-list">
+              <li>City served: Dhaka</li>
+              <li>Languages: Bangla, English</li>
+              <li>Availability: Mon-Sat, 8 AM to 6 PM</li>
+              <li>Reviews preview and skill tags</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel tab-panel" id="clinic">
+          <div class="panel-head"><span>Clinic Listings</span><span>Curated provider network</span></div>
+          <div style="padding: 14px;" class="grid-3">
+            <article class="card"><h3>GreenView Diagnostics</h3><p>Verified badge, imaging and lab tests, Dhaka North, medium price range.</p></article>
+            <article class="card"><h3>City Heart Center</h3><p>Cardiology consults, online appointments, Dhaka Central, premium slot support.</p></article>
+            <article class="card"><h3>Family MedPoint</h3><p>General physician visits, elderly-friendly access, fast booking availability.</p></article>
+          </div>
+        </div>
+
+        <div class="panel tab-panel" id="training">
+          <div class="panel-head"><span>Training and Certification</span><span>Supply-side quality</span></div>
+          <div style="padding: 14px;" class="grid-2">
+            <ul class="content-list">
+              <li>Basic caregiver course</li>
+              <li>Module progress: 86 percent</li>
+              <li>Quiz completed and assessed</li>
+            </ul>
+            <ul class="content-list">
+              <li>Certificate earned</li>
+              <li>Marketplace eligibility badge</li>
+              <li>Next module: Clinical protocol support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Trust, screening, and accountability</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card"><div class="icon">T1</div><h3>Verified caregivers</h3><p>ID checks, screening, and training completion.</p></article>
+          <article class="card"><div class="icon">T2</div><h3>Curated providers</h3><p>Only approved clinics and professionals are listed.</p></article>
+          <article class="card"><div class="icon">T3</div><h3>Ratings and reviews</h3><p>Every visit builds provider reputation over time.</p></article>
+          <article class="card"><div class="icon">T4</div><h3>Visit tracking</h3><p>Families receive real-time status checkpoints.</p></article>
+          <article class="card"><div class="icon">T5</div><h3>Documented history</h3><p>Notes, receipts, and summaries are stored per visit.</p></article>
+          <article class="card"><div class="icon">T6</div><h3>Human oversight</h3><p>A curated model avoids open-marketplace chaos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Marketplace ecosystem</h2>
+        </div>
+        <div class="grid-2">
+          <article class="card"><h3>Families</h3><p>Need trusted coordination from abroad.</p></article>
+          <article class="card"><h3>Caregivers</h3><p>Need income and predictable access to clients.</p></article>
+          <article class="card"><h3>Clinics</h3><p>Need visibility and streamlined bookings.</p></article>
+          <article class="card"><h3>Training organizations</h3><p>Need pathways to marketplace participation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="business">
+      <div class="container">
+        <div class="section-head">
+          <h2>Revenue model</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card"><h3>Service commission</h3><p>Platform fee per successful booking.</p></article>
+          <article class="card"><h3>Care packages</h3><p>Fixed pricing for standard support bundles.</p></article>
+          <article class="card"><h3>Clinic listing fees</h3><p>Sponsored visibility for partner providers.</p></article>
+          <article class="card"><h3>Training revenue</h3><p>Course fees for caregiver onboarding and certification.</p></article>
+          <article class="card"><h3>Subscription plans</h3><p>Monthly recurring support plans for families.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Why this can work</h2>
+        </div>
+        <div class="grid-2">
+          <article class="card"><h3>Strong diaspora pain point</h3><p>Families already spend to coordinate care informally.</p></article>
+          <article class="card"><h3>Fragmented local service layer</h3><p>The market exists, but remains unorganized.</p></article>
+          <article class="card"><h3>Workforce opportunity</h3><p>Large supply of trainable young caregivers.</p></article>
+          <article class="card"><h3>Curated platform advantage</h3><p>Trust and quality control become clear differentiators.</p></article>
+          <article class="card"><h3>Expandable model</h3><p>Starts with escort services and expands to broader support.</p></article>
+        </div>
+        <div class="metrics">
+          <div class="metric"><strong>1,200+</strong><span>Verified caregivers</span></div>
+          <div class="metric"><strong>180+</strong><span>Partner clinics</span></div>
+          <div class="metric"><strong>12</strong><span>Cities covered</span></div>
+          <div class="metric"><strong>25k+</strong><span>Completed visits</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="container">
+        <div class="section-head">
+          <h2>Sample care journey</h2>
+          <p class="subtitle">Scenario: Daughter in Toronto books a hospital visit for her mother in Dhaka.</p>
+        </div>
+        <div class="journey">
+          <article class="card"><strong>1</strong><p>Booking placed</p></article>
+          <article class="card"><strong>2</strong><p>Caregiver assigned</p></article>
+          <article class="card"><strong>3</strong><p>Mother picked up</p></article>
+          <article class="card"><strong>4</strong><p>Consultation complete</p></article>
+          <article class="card"><strong>5</strong><p>Prescription uploaded</p></article>
+          <article class="card"><strong>6</strong><p>Mother returned home</p></article>
+          <article class="card"><strong>7</strong><p>Daughter gets summary</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>CareBridge Bangladesh</h3>
+          <p>Trusted care coordination for families supporting parents back home.</p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <p><a href="#solution">About</a></p>
+          <p><a href="#demo">Demo</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <p>Email: hello@carebridge-demo.com</p>
+          <p>GitHub: github.com/carebridge-demo</p>
+          <p>LinkedIn: linkedin.com/company/carebridge-demo</p>
+        </div>
+      </div>
+      <div class="footer-note">Concept demo page for investor presentation</div>
+    </div>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll(".tab-btn");
+    const panels = document.querySelectorAll(".tab-panel");
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const tab = button.dataset.tab;
+        buttons.forEach((b) => b.classList.remove("active"));
+        panels.forEach((p) => p.classList.remove("active"));
+        button.classList.add("active");
+        document.getElementById(tab).classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
