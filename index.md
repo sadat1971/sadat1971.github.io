@@ -20,7 +20,7 @@ title: About
 
 ## Recent Updates
 
-* **09-2026:** 🎉 Our paper [*Relational Priors as Convergence Pressure in LLM-Based Multi-Agent Systems*](https://arxiv.org/abs/2608.03239) was accepted to **AACL 2027**!
+* **09-2026:** 🎉 Our paper [*Relational Priors as Convergence Pressure in LLM-Based Multi-Agent Systems*](https://arxiv.org/abs/2608.03239) was accepted to **AACL 2026**!
 
 * **09-2026:** ✍️ Wrote a new blog, [*How to Secure AI Agents with AgentCore Policy*](https://medium.com/@shahriarsadat71_26111/how-to-secure-ai-agents-with-agentcore-policy-70e39dd77e7c), discussing how deterministic policies can help keep AI agents safe and within defined boundaries.
 
