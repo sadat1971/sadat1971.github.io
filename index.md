@@ -13,13 +13,22 @@ title: About
       <a href="https://www.linkedin.com/in/sadat-shahriar/" target="_blank">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=8whkcEsAAAAJ&hl=en" target="_blank">Google Scholar</a>
       <a href="/misc">Misc</a>
-      <a href="/codex_demo_website/temp.html">Temp</a>
     </div>
   </div>
 </div>
 
 
 ## Recent Updates
+
+* **09-2026:** 🎉 Our paper [*Relational Priors as Convergence Pressure in LLM-Based Multi-Agent Systems*](https://arxiv.org/abs/2608.03239) was accepted to **AACL 2027**!
+
+* **09-2026:** ✍️ Wrote a new blog, [*How to Secure AI Agents with AgentCore Policy*](https://medium.com/@shahriarsadat71_26111/how-to-secure-ai-agents-with-agentcore-policy-70e39dd77e7c), discussing how deterministic policies can help keep AI agents safe and within defined boundaries.
+
+* **08-20-2026:** 🚀 Launched new **AgentCore Policy** capabilities with [Dogwood](https://aws.amazon.com/blogs/machine-learning/authoring-dogwood-policies-from-natural-language-in-amazon-bedrock-agentcore/), enabling agents to follow more expressive policies involving state, sequencing, and actions over time.
+
+* **07-17-2026:** 📝 Completed my reviewing service for **NeurIPS 2026**.
+
+* **07-02-2026:** ✈️ Attended **ACL 2026 in San Diego** and presented our Findings paper, [*MEAV: Model Editing with Alignment Vectors for Inference-Time LLM Alignment in Single and Multidomain Preference Spectrum*](https://aclanthology.org/2026.findings-acl.2035/). Had a great time meeting researchers and discussing safety, alignment, and soccer (watched the games) !
 
 - **12-02-2025:** 🚀 Launched [AgentCore Policy](https://aws.amazon.com/about-aws/whats-new/2025/12/amazon-bedrock-agentcore-policy-evaluations-preview/), to keep agents safe, and stay within defined boundary. Check details [here](https://aws.amazon.com/blogs/aws/amazon-bedrock-agentcore-adds-quality-evaluations-and-policy-controls-for-deploying-trusted-ai-agents/)
 
