@@ -18,3 +18,7 @@ A curated collection of technical resources and articles worth reading.
 
 - [What I Learned from My Industry Job Search as a CS PhD](https://dyahadila.github.io/blog/2026/industry-job-search-cs-phd/)
 This blog post goes over topics such as job preparation, the application process, interview strategies, and general advice for PhD students aiming for roles in artificial intelligence and related fields.
+
+
+- [Notes on the Industry Job Search](https://alisawuffles.github.io/blog/job-search/)
+More intensive guidelines for job search, much like the previous link. But more resource-heavy. 
