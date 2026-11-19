@@ -1,0 +1,62 @@
+---
+layout: default
+title: Compound Interest Calculator
+---
+
+<link rel="stylesheet" href="/assets/css/calculators.css">
+
+<div class="calculator-page">
+  <h1>Compound Interest Calculator</h1>
+  <p class="calculator-intro">Plan an investment from either direction: project its future value, or work backward from a savings goal to find the monthly contribution, starting amount, or time required.</p>
+
+  <div class="calculator-shell">
+    <form class="calculator-card" id="compound-form" novalidate>
+      <h2>Your savings plan</h2>
+      <div class="field-grid">
+        <div class="field-group full-width">
+          <label for="compound-mode">What do you want to calculate?</label>
+          <select id="compound-mode">
+            <option value="future">Final amount</option>
+            <option value="monthly">Required monthly contribution</option>
+            <option value="initial">Required initial investment</option>
+            <option value="years">Time needed to reach a goal</option>
+          </select>
+        </div>
+        <div class="field-group conditional-field" data-modes="future monthly years">
+          <label for="initial-investment">Initial investment</label>
+          <div class="input-wrap has-prefix"><span class="input-prefix">$</span><input id="initial-investment" type="number" min="0" step="100" value="10000"></div>
+        </div>
+        <div class="field-group conditional-field" data-modes="future initial years">
+          <label for="monthly-contribution">Monthly contribution</label>
+          <div class="input-wrap has-prefix"><span class="input-prefix">$</span><input id="monthly-contribution" type="number" min="0" step="25" value="500"></div>
+          <small class="field-hint">Assumed to be deposited at the end of each month.</small>
+        </div>
+        <div class="field-group conditional-field" data-modes="monthly initial years">
+          <label for="savings-goal">Target final amount</label>
+          <div class="input-wrap has-prefix"><span class="input-prefix">$</span><input id="savings-goal" type="number" min="1" step="1000" value="150000"></div>
+        </div>
+        <div class="field-group">
+          <label for="annual-return">Expected annual return</label>
+          <div class="input-wrap has-suffix"><input id="annual-return" type="number" min="0" max="100" step="0.1" value="7"><span class="input-suffix">%</span></div>
+        </div>
+        <div class="field-group conditional-field" data-modes="future monthly initial">
+          <label for="investment-years">Investment period</label>
+          <div class="input-wrap has-suffix"><input id="investment-years" type="number" min="0.08" max="100" step="0.5" value="10"><span class="input-suffix">years</span></div>
+        </div>
+      </div>
+      <div class="button-row"><button class="calculate-button" type="submit">Calculate</button><button class="reset-button" type="reset">Reset defaults</button></div>
+      <div class="calculator-error" id="compound-error" role="alert" hidden></div>
+    </form>
+
+    <aside class="result-card" aria-live="polite">
+      <p class="result-kicker" id="compound-result-label">Projected final amount</p>
+      <div class="result-primary" id="compound-result">$106,542</div>
+      <p class="result-summary" id="compound-summary">Compounding can make a meaningful difference over time.</p>
+      <ul class="result-list" id="compound-breakdown"></ul>
+      <div class="assumption-note">This illustration assumes a constant return compounded monthly, no taxes or fees, and contributions at month-end. Actual investment returns vary and may be negative.</div>
+    </aside>
+  </div>
+  <p class="calculator-links"><a href="/homebuyer-calculator">Try the Homebuyer Calculator</a> · <a href="/misc">Back to Miscellaneous</a></p>
+</div>
+
+<script src="/assets/js/compound-interest-calculator.js"></script>

@@ -1,0 +1,98 @@
+---
+layout: default
+title: Homebuyer Calculator
+---
+
+<link rel="stylesheet" href="/assets/css/calculators.css">
+
+<div class="calculator-page">
+  <h1>Homebuyer Calculator</h1>
+  <p class="calculator-intro">Explore a home purchase from different directions. Estimate the full monthly cost, an affordable home price, the down payment you need, or the mortgage rate your budget can support.</p>
+
+  <div class="calculator-shell">
+    <form class="calculator-card" id="mortgage-form" novalidate>
+      <h2>Your scenario</h2>
+      <div class="field-grid">
+        <div class="field-group full-width">
+          <label for="mortgage-mode">What do you want to calculate?</label>
+          <select id="mortgage-mode" name="mode">
+            <option value="payment">Total monthly housing cost</option>
+            <option value="price">Affordable home price</option>
+            <option value="downPayment">Required down payment</option>
+            <option value="rate">Affordable mortgage rate</option>
+          </select>
+        </div>
+
+        <div class="field-group conditional-field" data-modes="payment downPayment rate">
+          <label for="home-price">Home price</label>
+          <div class="input-wrap has-prefix"><span class="input-prefix">$</span><input id="home-price" type="number" min="1" step="1000" value="500000"></div>
+        </div>
+
+        <div class="field-group conditional-field" data-modes="payment price rate">
+          <label for="down-payment">Down payment</label>
+          <div class="input-wrap has-prefix"><span class="input-prefix">$</span><input id="down-payment" type="number" min="0" step="1000" value="100000"></div>
+        </div>
+
+        <div class="field-group conditional-field" data-modes="payment price downPayment">
+          <label for="mortgage-rate">Mortgage interest rate</label>
+          <div class="input-wrap has-suffix"><input id="mortgage-rate" type="number" min="0" max="30" step="0.01" value="6.5"><span class="input-suffix">%</span></div>
+        </div>
+
+        <div class="field-group conditional-field" data-modes="price downPayment rate">
+          <label for="monthly-budget">Maximum monthly housing budget</label>
+          <div class="input-wrap has-prefix"><span class="input-prefix">$</span><input id="monthly-budget" type="number" min="1" step="50" value="3500"></div>
+          <small class="field-hint">Includes mortgage, tax, insurance, HOA, and maintenance.</small>
+        </div>
+
+        <div class="field-group">
+          <label for="loan-term">Loan term</label>
+          <select id="loan-term"><option value="30" selected>30 years</option><option value="20">20 years</option><option value="15">15 years</option><option value="10">10 years</option></select>
+        </div>
+      </div>
+
+      <hr class="section-divider">
+      <h2>Other ownership costs</h2>
+      <div class="field-grid">
+        <div class="field-group">
+          <label for="property-tax">Property tax</label>
+          <div class="input-wrap has-suffix"><input id="property-tax" type="number" min="0" max="10" step="0.01" value="1.1"><span class="input-suffix">%</span></div>
+          <small class="field-hint">Annual percentage of home price.</small>
+        </div>
+        <div class="field-group">
+          <label for="insurance">Home insurance</label>
+          <div class="input-wrap has-prefix"><span class="input-prefix">$</span><input id="insurance" type="number" min="0" step="50" value="1500"></div>
+          <small class="field-hint">Annual amount.</small>
+        </div>
+        <div class="field-group">
+          <label for="hoa">HOA dues</label>
+          <div class="input-wrap has-prefix"><span class="input-prefix">$</span><input id="hoa" type="number" min="0" step="10" value="0"></div>
+          <small class="field-hint">Monthly amount.</small>
+        </div>
+        <div class="field-group">
+          <label for="maintenance">Maintenance reserve</label>
+          <div class="input-wrap has-suffix"><input id="maintenance" type="number" min="0" max="10" step="0.1" value="1"><span class="input-suffix">%</span></div>
+          <small class="field-hint">Annual percentage of home price.</small>
+        </div>
+        <div class="field-group">
+          <label for="closing-cost">Closing costs</label>
+          <div class="input-wrap has-suffix"><input id="closing-cost" type="number" min="0" max="20" step="0.1" value="3"><span class="input-suffix">%</span></div>
+          <small class="field-hint">Paid upfront; not included in the monthly total.</small>
+        </div>
+      </div>
+
+      <div class="button-row"><button class="calculate-button" type="submit">Calculate</button><button class="reset-button" type="reset">Reset defaults</button></div>
+      <div class="calculator-error" id="mortgage-error" role="alert" hidden></div>
+    </form>
+
+    <aside class="result-card" aria-live="polite">
+      <p class="result-kicker" id="mortgage-result-label">Estimated monthly cost</p>
+      <div class="result-primary" id="mortgage-result">$3,370</div>
+      <p class="result-summary" id="mortgage-summary">Change any assumption and select Calculate to compare scenarios.</p>
+      <ul class="result-list" id="mortgage-breakdown"></ul>
+      <div class="assumption-note">Estimates are for planning only. They exclude mortgage insurance (PMI), utilities, lender fees, tax deductions, and changes in taxes or insurance.</div>
+    </aside>
+  </div>
+  <p class="calculator-links"><a href="/compound-interest-calculator">Try the Compound Interest Calculator</a> · <a href="/misc">Back to Miscellaneous</a></p>
+</div>
+
+<script src="/assets/js/homebuyer-calculator.js"></script>
